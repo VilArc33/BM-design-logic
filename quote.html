@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a quote for house construction, remodeling, interiors, kitchens, bathrooms, saunas, or Pergolux installations.">
+  <title>Get a Quote | BM Construction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-site-header>
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="BM Home">BM</a>
+        <div class="nav-wrap" id="primary-nav-wrap">
+          <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="quote.html" aria-current="page">Quote</a>
+          </nav>
+        </div>
+        <div class="header-actions">
+          <a class="btn btn-primary hidden-mobile" href="quote.html">Get a Quote</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+            <span></span><span></span><span></span>
+            <span class="sr-only" style="position:absolute;left:-9999px;">Toggle navigation</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mini-hero" aria-labelledby="quote-title">
+        <div class="container hero-row">
+          <div>
+            <p class="kicker">Get a Quote</p>
+            <h1 id="quote-title" style="max-width:none;">Get a Quote</h1>
+            <p class="lead" style="margin-top:0.85rem;">Send your project details. Typical response time: 24–48 hours.</p>
+          </div>
+          <a class="btn btn-secondary" href="services.html">Review Services</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="quote-form-title">
+        <div class="container form-layout">
+          <div class="form-card">
+            <div class="section-header" style="margin-bottom:1rem;">
+              <div>
+                <p class="kicker">Quote Form</p>
+                <h2 id="quote-form-title">Project information</h2>
+              </div>
+            </div>
+
+            <form method="GET" action="quote.html" aria-describedby="quote-helper">
+              <div class="form-grid two-col">
+                <div class="field">
+                  <label for="full-name">Full Name</label>
+                  <input id="full-name" name="name" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                  <label for="address">City / Address</label>
+                  <input id="address" name="address" type="text" autocomplete="street-address" placeholder="City, neighborhood, or full project address" required>
+                </div>
+
+                <div class="field">
+                  <label for="service-type">Service Type</label>
+                  <select id="service-type" name="service" required>
+                    <option value="">Select service</option>
+                    <option value="houses">houses</option>
+                    <option value="kitchens">kitchens</option>
+                    <option value="bathrooms">bathrooms</option>
+                    <option value="saunas">saunas</option>
+                    <option value="pergolux">pergolux</option>
+                    <option value="interiors-general">interiors-general</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="timeline">Timeline</label>
+                  <select id="timeline" name="timeline" required>
+                    <option value="">Select timeline</option>
+                    <option>As soon as possible</option>
+                    <option>1-3 months</option>
+                    <option>3-6 months</option>
+                    <option>6+ months</option>
+                    <option>Planning stage only</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="budget">Budget range (optional)</label>
+                  <select id="budget" name="budget">
+                    <option value="">Prefer not to say</option>
+                    <option>Under $25k</option>
+                    <option>$25k-$75k</option>
+                    <option>$75k-$150k</option>
+                    <option>$150k-$300k</option>
+                    <option>$300k+</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="files">Reference files (prototype only)</label>
+                  <input id="files" name="files" type="file" aria-describedby="files-note">
+                  <small id="files-note">Presentational UI only. No backend upload is connected in this prototype.</small>
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:0.9rem;">
+                <label for="details">Project details</label>
+                <textarea id="details" name="details" placeholder="Scope, dimensions, materials, current condition, and any deadlines" required></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Submit Quote Request</button>
+                <span id="quote-helper" class="helper-text">Prototype form only. Submission reloads this page with query parameters.</span>
+              </div>
+            </form>
+          </div>
+
+          <aside class="grid" aria-label="Trust information" style="gap:1rem;">
+            <div class="trust-block">
+              <p class="eyebrow">Service Area</p>
+              <p style="margin-top:0.6rem;">City / Region placeholder. Extended travel available for select residential scopes after review.</p>
+            </div>
+
+            <div class="trust-block">
+              <p class="eyebrow">Credibility</p>
+              <p style="margin-top:0.6rem;">Construction-focused quoting process with direct communication, scope clarity, and practical scheduling.</p>
+            </div>
+
+            <div class="form-card">
+              <h3>What helps us quote faster</h3>
+              <ul class="list-check" style="margin-top:0.75rem;">
+                <li>Service type and location</li>
+                <li>Photos or dimensions (if available)</li>
+                <li>Preferred timeline and scope priorities</li>
+              </ul>
+              <p class="prototype-note" id="thanks">Thank you. This is a static prototype form for layout and flow only.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="index.html" aria-label="BM Home">BM</a>
+          <p class="helper-text" style="margin-top:0.75rem; max-width:30ch;">Quote request hub for construction, interiors, kitchens, saunas, and Pergolux installations.</p>
+        </div>
+        <div>
+          <h3>Navigation</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quote.html">Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-list">
+            <li>Phone: +1 (000) 000-0000</li>
+            <li>Email: hello@bmconstruction.example</li>
+            <li>Service Area: City / Region placeholder</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <ul class="footer-list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">Prototype site for BM Construction. Placeholder content and project images.</div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var header = document.querySelector('[data-site-header]');
+      var toggle = document.querySelector('[data-menu-toggle]');
+      if (header && toggle) {
+        toggle.addEventListener('click', function () {
+          var open = header.classList.toggle('menu-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+
+      var serviceField = document.getElementById('service-type');
+      if (serviceField) {
+        var params = new URLSearchParams(window.location.search);
+        var service = params.get('service');
+        var allowed = ['houses', 'kitchens', 'bathrooms', 'saunas', 'pergolux', 'interiors-general'];
+        if (service && allowed.indexOf(service) !== -1) {
+          serviceField.value = service;
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
